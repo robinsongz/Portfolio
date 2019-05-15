@@ -14,7 +14,10 @@
 .contact-title {
     text-align: center;
     margin: 0 auto;
-    width: 50%;
+
+    @media #{$max-medium} {
+        width: 100%;
+    }
 }
 
 .border-bottom-contact {
