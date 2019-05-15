@@ -1,0 +1,36 @@
+@import '../sass/variables.scss';
+
+.section-contact {
+    height: 100vh;
+    background-color: $color-dark-navy;
+    text-align: center;
+    position: relative;
+}
+
+.contact-title {
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: solid $color-light-gray;
+    border-bottom-width: medium;
+    width: 50%;
+}
+
+.contact-heading {
+    color: $color-light-gray;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin: 10rem;
+    padding: 10rem;
+}
+
+.icon {
+    margin: 10rem;
+    color: $color-light-gray;
+
+    &:hover {
+        color: $color-highlight;
+    }
+}

@@ -1,0 +1,171 @@
+@import '../sass/variables.scss';
+
+.section-portfolio {
+    height: 100vh;
+    background-color: $color-light-gray;
+    text-align: center;
+    position: relative;
+}
+
+.portfolio-title {
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: solid $color-dark-gray;
+    border-bottom-width: medium;
+    width: 50%;
+}
+
+.portfolio-body {
+    padding: 10rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.portfolio-items {
+    margin: 5rem; 
+    border-radius: 3px;
+    
+    &-caption {
+        color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        opacity: 0;
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        font-weight: 700;
+        text-align: center;
+        transition: all .5s;
+        backface-visibility: hidden;
+        
+    }
+
+    &-image {
+       
+        position: relative;
+        
+        > img {
+            width: 40rem;
+            height: 30rem; 
+            transition: all .5s;
+            
+        }
+    }
+
+    &:hover &-caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+
+    &:hover &-image>img {
+        opacity: 0;
+        cursor: pointer;
+    }
+}
+
+
+.caption-button {
+    background: transparent;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1rem 3rem;
+        display: inline-block;
+        transition: all .5s;
+        position: relative;
+        border: solid black;
+        margin-top: 5rem;
+        cursor: pointer;
+        font-family: 'Raleway';
+        font-size: 1.5rem;
+        font-weight: 700;
+    &:hover {
+        background-color: $color-highlight;
+    }
+}
+
+.caption-description {
+    font-size: 1.2rem;
+    color: $color-dark-gray;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: none;
+    border-color: none;
+    background-color: white;
+    outline: none;
+
+    &-title {
+        text-align: center;
+    }
+
+    &-description {
+        color: black;
+        font-weight: 700;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    &-bottom {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.x-button {
+    font-size: 2rem;
+    font-weight: 100;
+    background: transparent;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+    left: 95%;
+    margin: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+
+    &:hover {
+        color: $color-highlight;
+    }
+}
+
+.view-button {
+    margin: 3rem;
+    padding: 1rem 5rem;
+}
+
+.overlay {
+    background-color: transparent;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}

@@ -1,0 +1,30 @@
+@import './sass/variables.scss';
+@import './sass/typography.scss';
+@import './sass/button.scss';
+@import './sass/utilities.scss';
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;  
+    color: $color-white; 
+    background-color: $color-white;
+}  
+
+#particles-js {
+    background-color: $color-dark-navy;
+}

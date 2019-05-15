@@ -1,0 +1,36 @@
+.btn {
+    &,
+    &:link,
+    &:active {
+        background: transparent;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1rem 3rem;
+        display: inline-block;
+        transition: all .5s;
+        position: relative;
+        border: solid thin white;
+        cursor: pointer;
+        font-family: 'Raleway';
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    &:hover { 
+        border: none;
+        background-color: $color-highlight-dark;  
+
+    }
+      
+    &:active,
+    &:focus {
+        outline: none; 
+        transform: translateY(-.1rem);
+        box-shadow: 0 5px 10px rgba($color-black,.2);
+    }
+
+    &--header {
+        color: white;
+        margin: 5rem; 
+    } 
+} 
