@@ -8,21 +8,21 @@ class Header extends Component {
 
     render() {
         return (
-            <div class='header'>
+            <div className='header'>
                <ParticlesBackground />
-                   <div class='header__text-box'>
-                       <h1 class='heading-primary'>
-                           <div class='heading-primary--main'>
-                               Hello, I'm <span class='highlight'>robinsongz</span>.
+                   <div className='header__text-box'>
+                       <h1 className='heading-primary'>
+                           <div className='heading-primary--main'>
+                               Hello, I'm <span className='highlight'>robinsongz</span>.
                                <br/>
                                I'm a full-stack web developer.
-                           
+                            <div className="arrow bounce">
+                                <FontAwesomeIcon icon='arrow-down' size='1x'/>
+                            </div>
                            </div>
                        </h1>
                    </div>
-                   <div className="arrow bounce">
-                       <FontAwesomeIcon icon='arrow-down' size='3x'/>
-                   </div>
+                   
            </div>
          );
     }

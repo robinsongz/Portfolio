@@ -5,14 +5,22 @@
     background-color: $color-dark-navy;
     text-align: center;
     position: relative;
+
+    @media #{$max-medium} {
+        height: 100%;
+    }
 }
 
 .contact-title {
     text-align: center;
     margin: 0 auto;
-    border-bottom: solid $color-light-gray;
-    border-bottom-width: medium;
     width: 50%;
+}
+
+.border-bottom-contact {
+    margin: -3rem auto;
+    border-top: 4px solid white;
+    width: 10rem;
 }
 
 .contact-heading {
@@ -22,8 +30,13 @@
 .social {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 10rem;
     padding: 10rem;
+
+    @media #{$max-medium} {
+        flex-direction: column;
+    }
 }
 
 .icon {

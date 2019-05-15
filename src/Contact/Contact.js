@@ -10,6 +10,7 @@ function Contact() {
             <h2 className='heading-secondary contact-heading'>
                 Contact
             </h2>
+            <div className='border-bottom-contact'></div>
         </div>
 
         <div className='social'>

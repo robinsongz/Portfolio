@@ -53,6 +53,7 @@ class Portfolio extends Component {
                     <h2 className='heading-secondary'>
                         Projects
                     </h2>
+                    <div className='border-bottom'></div>
                 </div>
         
                 <div className='portfolio-body'>
