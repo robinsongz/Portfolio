@@ -172,3 +172,15 @@
 .ReactModal__Overlay--before-close{
     opacity: 0;
 }
+
+@media #{$max-medium} {
+    .heading-secondary[data-aos=slide-left] {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    .border-bottom[data-aos=slide-right] {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
