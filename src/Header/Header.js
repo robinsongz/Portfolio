@@ -8,6 +8,7 @@ class Header extends Component {
 
     render() {
         return (
+            
             <div className='header'>
                <ParticlesBackground />
                    <div className='header__text-box'>
