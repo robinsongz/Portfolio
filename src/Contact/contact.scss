@@ -45,8 +45,22 @@
 .icon {
     margin: 10rem;
     color: $color-light-gray;
-
+    font-size: 7rem;
+    
     &:hover {
         color: $color-highlight;
+    }
+
+    @media #{$max-large} {
+        font-size: 3rem;
+    }
+}
+
+.section-copyright {
+    text-align: center;
+
+    &__text {
+        font-size: 1.1rem;
+        font-weight: 700;
     }
 }

@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import './portfolio.scss';
 import Modal from 'react-modal';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
+AOS.init();
 Modal.setAppElement('#root')  
+
+
 
 class Portfolio extends Component {
     constructor() {
@@ -49,18 +54,19 @@ class Portfolio extends Component {
         return (
    
             <div className='section-portfolio' id='second'>
-                <div className='portfolio-title'>
-                    <h2 className='heading-secondary'>
+                <div 
+                    >
+                    <h2 className='heading-secondary' data-aos='slide-left'>
                         Projects
                     </h2>
-                    <div className='border-bottom'></div>
+                    <div className='border-bottom' data-aos='slide-right'></div>
                 </div>
         
                 <div className='portfolio-body'>
                     <div className='portfolio-items'>
                         
-                        <div class='portfolio-items-image'>
-                            <img alt='slime' src={require('./king_slime_solo.png')} />
+                        <div class='portfolio-items-image' data-aos='flip-up'>
+                            <img alt='slime' src={require('./king_slime_solo_400x400.png')} />
                         <div class='portfolio-items-caption'>
                             Slime Bot
                         <div class='caption-description'>
@@ -97,8 +103,8 @@ class Portfolio extends Component {
                     </div>
                     <div class='portfolio-items'>
                        
-                        <div class='portfolio-items-image'>
-                        <img alt='sandalboyz' src={require('./sandalboyz-logo.png')} />
+                        <div class='portfolio-items-image' data-aos='flip-up'>
+                        <img alt='sandalboyz' src={require('./sandalboyz-logo_400x400.png')} />
                         <div class='portfolio-items-caption'>
                         Sandalboyz
                         <div class='caption-description'>
@@ -132,8 +138,8 @@ class Portfolio extends Component {
                     </div>
                     <div class='portfolio-items'>
                         
-                        <div class='portfolio-items-image'>
-                        <img alt='msm calc' src={require('./maplestory-256x256.png')} />
+                        <div class='portfolio-items-image' data-aos='flip-up'>
+                        <img alt='msm calc' src={require('./maplestory-256x256_400x400.png')} />
                         <div class='portfolio-items-caption'>
                         MSM Calculator
                         <div class='caption-description'>
