@@ -145,25 +145,6 @@
     }
 }
 
-.x-button {
-    font-size: 2rem;
-    font-weight: 100;
-    background: transparent;
-    text-decoration: none;
-    display: inline-block;
-    position: absolute;
-    top: 0%;
-    left: 95%;
-    margin: 1rem;
-    border: none;
-    cursor: pointer;
-    transition: .5s;
-
-    &:hover {
-        color: $color-highlight;
-    }
-}
-
 .view-button {
     margin: 3rem;
     padding: 1rem 5rem;

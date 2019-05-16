@@ -91,7 +91,6 @@ class Portfolio extends Component {
                             <div className='modal-description'>Slime Bot is a discord app for the mobile game Maplestory M. It's built on Node using Discord.js. Website is hosted on Netlify and built using React.js.</div>
                             <div className='modal-bottom'>
                                 <a href='http://www.slimebot.org' target='_blank' rel='noopener noreferrer' className='caption-button view-button'>View Site</a> 
-                                <button className='x-button' onClick={this.closeModal1}> X </button>
                             </div>
                             
                                             
@@ -123,12 +122,13 @@ class Portfolio extends Component {
                             overlayClassName='overlay'
                             closeTimeoutMS={300}
                             >   
+                            
                             <div className='modal-title heading-secondary'>Sandalboyz.com</div>
                             
                             <div className='modal-description'>SANDALBOYZ is a movement and lifestyle, existing to bridge the gap between sophistication and comfort. Currently working on new website using React.js, GraphQL, Gatsby, Apollo, Emotion.</div>
                             <div className='modal-bottom'>
                                 <a href='http://www.sandalboyz.com' target='_blank' rel='noopener noreferrer' className='caption-button view-button'>View Site</a> 
-                                <button className='x-button' onClick={this.closeModal2}> X </button>
+                                
                             </div>
                             
                                             
@@ -153,17 +153,18 @@ class Portfolio extends Component {
                         <Modal 
                             isOpen={this.state.modalIsOpen3}
                             onRequestClose={this.closeModal3}
-                            contentLabel="Sandalboyz"
+                            contentLabel="MSM Calc"
                             className='modal'
                             overlayClassName='overlay'
                             closeTimeoutMS={300}
                             >   
+                            
                             <div className='modal-title heading-secondary'>MSM Calculator</div>
                             
                             <div className='modal-description'>MSM Calc is a damage calculator made for the mobile app Maplestory M. Made with React.js.</div>
                             <div className='modal-bottom'>
                                 <a href='https://robinsongz.github.io/maplestorymcalc/' target='_blank' rel='noopener noreferrer' className='caption-button view-button'>View Site</a> 
-                                <button className='x-button' onClick={this.closeModal3}> X </button>
+                                
                             </div>
                             
                                             
