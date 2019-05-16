@@ -56,16 +56,16 @@ class Portfolio extends Component {
             <div className='section-portfolio' id='second'>
                 <div 
                     >
-                    <h2 className='heading-secondary' data-aos='slide-left'>
+                    <h2 className='heading-secondary' data-aos='slide-left' data-aos-once='true'>
                         Projects
                     </h2>
-                    <div className='border-bottom' data-aos='slide-right'></div>
+                    <div className='border-bottom' data-aos='slide-right' data-aos-once='true'></div>
                 </div>
         
                 <div className='portfolio-body'>
                     <div className='portfolio-items'>
                         
-                        <div class='portfolio-items-image' data-aos='flip-up'>
+                        <div class='portfolio-items-image' data-aos='flip-right' data-aos-once='true' data-aos-delay='100'>
                             <img alt='slime' src={require('./king_slime_solo_400x400.png')} />
                         <div class='portfolio-items-caption'>
                             Slime Bot
@@ -103,7 +103,7 @@ class Portfolio extends Component {
                     </div>
                     <div class='portfolio-items'>
                        
-                        <div class='portfolio-items-image' data-aos='flip-up'>
+                        <div class='portfolio-items-image' data-aos='flip-right' data-aos-once='true' data-aos-delay='200'>
                         <img alt='sandalboyz' src={require('./sandalboyz-logo_400x400.png')} />
                         <div class='portfolio-items-caption'>
                         Sandalboyz
@@ -138,7 +138,7 @@ class Portfolio extends Component {
                     </div>
                     <div class='portfolio-items'>
                         
-                        <div class='portfolio-items-image' data-aos='flip-up'>
+                        <div class='portfolio-items-image' data-aos='flip-right' data-aos-once='true' data-aos-delay='300'>
                         <img alt='msm calc' src={require('./maplestory-256x256_400x400.png')} />
                         <div class='portfolio-items-caption'>
                         MSM Calculator
